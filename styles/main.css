@@ -226,7 +226,7 @@
 .contacto{
     position: relative;
     width: 960px;
-    height: 578px;
+    height: 600px;
     margin: auto;
     background: #1687a0;
 }
@@ -270,7 +270,8 @@
     display: block;
     width: 167px;  
     height: 56px; 
-    margin: auto;
+    margin-left: 300px;
+    
 
     font-family: Arial;
     font-style: normal;
@@ -280,3 +281,18 @@
     color: #FFFFFF;
     background: #233451;
 }
+
+input:focus{
+    background: skyblue;
+}
+input:valid{
+    background: yellowgreen;
+}
+
+textarea:focus{
+    background: skyblue;
+}
+
+
+
+

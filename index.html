@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>  
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/reset.css">
 </head>
 <body>
 <!------------------------HEADER---------------------->   
@@ -24,7 +26,7 @@
             Eu, malesuada elit feugiat laoreet malesuada vitae. zz enim habitasse malesuada lacus, euismod pharetra habitasse. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Quis diam commodo, arcu gravida erat quam donec convallis. Gravida arcu, suspendisse semper mauris tristique tortor. Eu, malesuada elit feugiat laoreet malesuada vitae.
             zz enim habitasse malesuada lacus, euismod pharetra habitasse.</p>    
-        <input class="sobre-mi__button" type="submit" value="Ver CV">             
+        <button class="sobre-mi__button">Ver CV</button>                    
     </section>
     <!---------------------MIS SKILLS---------------------->
     <section class="skills">
@@ -101,9 +103,11 @@
                 <input class="contacto__control" type="text" name="firstname" placeholder="Nombre" required pattern="[A-Za-z]+">
                 <input class="contacto__control" type="text" name="lastname"  placeholder="Apellido" required pattern="[A-Za-z]+">
                 <input class="contacto__control" type="email" name="email" placeholder="Email" required>
-                <input class="contacto__control" type="number" name="telephone" placeholder="Telefono" required pattern="[0-9]+">
+                <input class="contacto__control" type="text" name="telephone" placeholder="Telefono" required pattern="[0-9]+">
+                <input class="contacto__control" type="text" name="dni" placeholder="Dni" min="8" required pattern="[A-Za-z0-9]+">
+                <input class="contacto__control" type="number" name="age" placeholder="Edad" min="18" max="100" required pattern="[0-9]+">
                 <textarea class="contacto__descripcion" type="text" name="Description" placeholder="Descripcion"></textarea>
-                <input class="botons" type="submit" name="button" >
+                <input class="contacto__botons" type="submit" name="button" >
             </div>
         </form>
     </section>
