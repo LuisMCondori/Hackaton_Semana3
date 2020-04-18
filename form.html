@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERCER RETO</title>
+</head>
+
+<!--ESTIOS CSS-->
+<style>
+
+input:focus{
+    background: yellow;
+}
+
+div{
+    padding: 10px;
+    margin: 10px;
+}
+
+
+</style>
+
+<!--CUERPO FORMULARIO-->
+<body>
+    <section>
+        <h2>FORMULARIO</h2>
+        <form name="formulario" method="get" action="#">
+            <fieldset >
+                <legend> Datos Personales</legend> 
+                <div><label>Nombre: <input type="text" name="name" required pattern="[A-Za-z]+"></label></div>
+                <div><label>Apellido: <input type="text" name="lastname" required pattern="[A-Za-z]+"></label></div>
+            </fieldset>
+            <fieldset >
+                <div><label>Edad: <input type="number" name="age" min="18" max="80" required></label></div>
+                <div><label>Dni: <input type="text" name="dni" min="8" required pattern="[A-Za-z0-9]+"></label></div>
+                <div><label>Correo: <input type="email" name="email" required></label></div>                
+            </fieldset>
+            <p><input type="submit" value="Enviar Datos"></p>
+        </form>
+    </section>
+
+</body>
+</html>
+
